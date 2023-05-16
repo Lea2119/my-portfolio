@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+
+.contact {
+  /* background-color: rgb(253, 245, 235); */
+  background-color: #f7ede2;
+  height: 100%;
+}
+main {
+  height: 100%;
+  /* background-color: red; */
+}
+
+.contact-ttle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  /* background-color: blue; */
+  font-size: 4rem;
+  font-family: "Anton", sans-serif;
+}
+
+.ttle {
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ttle h1 {
+  font-size: 5rem;
+  font-family: "Anton", sans-serif;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  /* background-color: pink; */
+  min-height: 400px;
+}
+
+.find-me {
+  font-size: 2rem;
+}
+
+.contact-content li {
+  list-style: none;
+  text-align: left;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,38 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Use min-height instead of height for responsive behavior */
+  /* background-color: rgb(253, 245, 235); */
+  /* background-color: #f7ede2; */
+}
+
+.contact-title h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 450px;
+  margin-top: 20px;
+  font-size: 6rem;
+  font-family: "Anton", sans-serif;
+}
+
+.contact-title span {
+  background-color: transparent;
+  color: black;
+  font-size: 8rem;
+}
+.bottom-content {
+  flex: 1; /* Use flex: 1 instead of flex: auto for responsive behavior */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 2rem;
+}
