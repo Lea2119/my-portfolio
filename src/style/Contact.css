@@ -69,12 +69,26 @@ main {
   font-size: 1.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 525px) {
   .contact-content {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     min-height: 400px;
+  }
+
+  .pb-1 {
+    font-family: "IBM Plex Sans", sans-serif;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 40px;
+  }
+
+  .pb-2 a {
+    text-transform: none;
+    font-weight: 600;
+    font-size: 2rem;
   }
 }

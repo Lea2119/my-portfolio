@@ -31,16 +31,17 @@ body {
   display: flex;
   font-family: "IBM Plex Sans", sans-serif;
   justify-content: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 20px;
 }
 
 .interest-item span {
-  font-size: 2rem;
-  background-color: black;
-  color: white;
+  font-size: 3rem;
+  padding: 0;
+  font-family: "Anton", sans-serif;
+  background-color: transparent;
+  color: black;
 }
 
 .about-text {
@@ -52,11 +53,13 @@ body {
   text-align: justify;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 525px) {
   .interest-item span {
-    font-size: 1rem;
-    background-color: black;
-    color: white;
+    font-size: 3rem;
+    padding: 0;
+    font-family: "Anton", sans-serif;
+    background-color: transparent;
+    color: black;
   }
 
   .about-container {
