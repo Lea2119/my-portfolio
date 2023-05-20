@@ -20,7 +20,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 450px;
   /* background-color: green; */
   font-size: 4rem;
   font-family: "Anton", sans-serif;
@@ -41,7 +41,8 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  min-height: 400px;
+  min-height: 300px;
+  /* background-color: blue; */
 }
 
 .find-me {

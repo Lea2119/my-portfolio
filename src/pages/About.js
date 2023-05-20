@@ -15,7 +15,7 @@ const About = () => {
         exit={{ opacity: 1 }}
         className="about-container"
       >
-        <m.div
+        {/* <m.div
           variants={container}
           initial="hidden"
           animate="show"
@@ -30,7 +30,7 @@ const About = () => {
           <m.p variants={item} class="interest-item">
             <span>LEARNER</span>
           </m.p>
-        </m.div>
+        </m.div> */}
         <m.div
           variants={container}
           initial="hidden"

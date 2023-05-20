@@ -45,7 +45,7 @@ const Home = () => {
               Curious & Committed to Learn
             </m.h3>
             <m.h3 variants={item} custom={5}>
-              Driven to Create and Embrace Challenges
+              Driven to Create & Embrace Challenges
             </m.h3>
             <m.h3 variants={item} custom={6}>
               Inspired to Grow & Collaborate
