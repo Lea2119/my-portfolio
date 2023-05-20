@@ -1,10 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
-
 html,
 body {
   height: 100%;
-  /* background-color: rgb(253, 245, 235); */
   background-color: #f7ede2;
 }
 
@@ -16,11 +12,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .cards {
   height: 100%;
-  padding: 50px;
-  margin: 50px;
+  margin: 80px;
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -30,16 +26,17 @@ body {
 }
 
 .card {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100%;
   width: 100%;
-  height: 400px; /* Adjust the height as needed */
-  margin-bottom: 40px;
-  /* border: 1px solid black; */
+  min-height: 400px;
+  margin-bottom: 20px;
 }
 
 .img {
   width: 100%;
-  height: 100%; /* Adjust the height as needed */
+  height: 100%;
   box-shadow: 5px 5px 5px rgb(200, 200, 200);
 }
 
@@ -50,10 +47,8 @@ img {
 }
 
 .card-content {
-  /* font-family: "Fjalla One", sans-serif; */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -65,17 +60,28 @@ img {
   height: 100%;
 }
 
-.span {
-  margin-top: 40px;
-}
-
 span {
   background-color: black;
   font-size: 0.8rem;
-  border-radius: 5px;
+  font-weight: 600;
+  border: none;
   color: white;
   margin-right: 10px;
   padding: 10px;
+}
+
+.github,
+.website {
+  background-color: transparent;
+}
+
+.github a,
+.website a {
+  color: black;
+  border-bottom: 1px solid black;
+  padding-bottom: 4px;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .card-content p {
@@ -83,11 +89,14 @@ span {
   text-align: justify;
   line-height: 2rem;
   margin-top: 80px;
-  margin-bottom: 40px;
 }
 
 .card-content h6 {
   font-weight: 800;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid black;
 }
 
 .bottom-content {
@@ -96,7 +105,7 @@ span {
   justify-content: space-around;
   align-items: center;
   text-align: justify;
-  line-height: 2.5rem;
+  line-height: 2.2rem;
 }
 
 button {
@@ -108,19 +117,42 @@ button {
   padding: 10px;
 }
 
-/* Responsive Adjustments */
-
-@media (min-width: 768px) {
-  /* Adjust the breakpoint value as needed */
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 1020px) {
+  .card {
+    display: grid;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    min-height: 500px;
   }
 }
 
-@media (min-width: 1024px) {
-  /* Adjust the breakpoint value as needed */
+@media (max-width: 768px) {
   .cards {
-    padding: 40px;
+    margin: 0;
+  }
+  .card {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  .card-content h6 {
+    font-weight: 800;
+    font-size: 1rem;
+    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .card-content {
+    padding: 10px;
   }
 }

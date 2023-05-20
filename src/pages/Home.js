@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { motion as m, AnimatePresence } from "framer-motion";
+import { container, item } from "./animation";
 import "../style/Home.css";
 
 const Home = () => {
@@ -11,23 +12,45 @@ const Home = () => {
         <m.h1
           initial={{ y: "-100%" }}
           animate={{ y: "0%" }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
+          transition={{ duration: 1, ease: "easeOut" }}
           exit={{ opacity: 1 }}
           className="contact-title"
         >
           <h1>HELLO, I'M LEA</h1>
         </m.h1>
         <div className="bottom-content">
-          <div className="little-description">
-            <h3>SOFTWARE</h3>
-            <h3>DEVELOPER</h3>
-            <h3>STUDENT</h3>
-          </div>
-          <div className="text-content">
-            <h3>Driven by curiosity, fueled by code</h3>
-            <h3>Driven to code, create, and innovate</h3>
-            <h3>Inspired to code and drive innovation</h3>
-          </div>
+          <m.div
+            variants={container}
+            initial="hidden"
+            animate="show"
+            className="little-description"
+          >
+            <m.h3 variants={item} custom={1}>
+              SOFTWARE
+            </m.h3>
+            <m.h3 variants={item} custom={2}>
+              DEVELOPER
+            </m.h3>
+            <m.h3 variants={item} custom={3}>
+              STUDENT
+            </m.h3>
+          </m.div>
+          <m.div
+            variants={container}
+            initial="hidden"
+            animate="show"
+            className="text-content"
+          >
+            <m.h3 variants={item} custom={4}>
+              Driven by curiosity, fueled by code
+            </m.h3>
+            <m.h3 variants={item} custom={5}>
+              Driven to code, create, and innovate
+            </m.h3>
+            <m.h3 variants={item} custom={6}>
+              Inspired to code and drive innovation
+            </m.h3>
+          </m.div>
         </div>
       </AnimatePresence>
     </div>

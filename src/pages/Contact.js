@@ -1,8 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { motion as m, AnimatePresence } from "framer-motion";
-import { container, item } from "../animation";
-import { NavLink } from "react-router-dom"; // Import NavLink from react-router-dom
+import { container, item } from "./animation";
 import "../style/Contact.css";
 
 const Contact = () => {
@@ -15,7 +14,7 @@ const Contact = () => {
             <m.h1
               initial={{ y: "100%" }}
               animate={{ y: "0%" }}
-              transition={{ duration: 0.75, ease: "easeOut" }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
               exit={{ opacity: 1 }}
               className="contact-ttle"
             >
@@ -26,24 +25,51 @@ const Contact = () => {
           </div>
           <div className="contact-content">
             <div className="find-me">
-              <h4>Find me</h4>
-              <h4></h4>
-              <h4></h4>
+              <m.h4
+                initial="hidden"
+                animate="show"
+                variants={item}
+                className="pb-1"
+              >
+                Find me on | by
+              </m.h4>
             </div>
+
             <div className="contact-links">
-              <ul variants={container} initial="hidden" animate="show">
-                <li variants={item} className="pb-2">
-                  Linkedin
-                </li>
-                <li variants={item} className="pb-2">
-                  Github
-                </li>
-                <li variants={item} className="pb-2">
-                  <NavLink to={"mailto:lea.csgn@gmail.com?x-mailer=macosx"}>
+              <m.ul
+                initial="hidden"
+                animate="show"
+                className="pb-2"
+                variants={container}
+              >
+                <m.li variants={item} className="pb-2">
+                  <m.a
+                    variants={item}
+                    href="https://www.linkedin.com/in/l%C3%A9a-cassegrain-9b4b1b270/"
+                    target="_blank"
+                  >
+                    Linkedin
+                  </m.a>
+                </m.li>
+                <m.li variants={item} className="pb-2">
+                  <m.a
+                    variants={item}
+                    href="https://github.com/Lea2119"
+                    target="_blank"
+                  >
+                    Github
+                  </m.a>
+                </m.li>
+                <m.li variants={item} className="pb-2">
+                  <m.a
+                    variants={item}
+                    href="mailto:lea.csgn@gmail.com?x-mailer=macosx"
+                    target="_blank"
+                  >
                     Email
-                  </NavLink>
-                </li>
-              </ul>
+                  </m.a>
+                </m.li>
+              </m.ul>
             </div>
           </div>
         </main>

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200;300;400;500;600;700;800;900&display=swap");
 
 html,
 body {
@@ -8,19 +9,20 @@ body {
 .contact {
   /* background-color: rgb(253, 245, 235); */
   background-color: #f7ede2;
+  /* background-color: red; */
   height: 100%;
 }
 main {
   height: 100%;
-  /* background-color: red; */
+  /* background-color: blue; */
 }
 
 .contact-ttle {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 600px;
-  /* background-color: blue; */
+  height: 500px;
+  /* background-color: green; */
   font-size: 4rem;
   font-family: "Anton", sans-serif;
 }
@@ -34,14 +36,12 @@ main {
 
 .ttle h1 {
   font-size: 5rem;
-  font-family: "Anton", sans-serif;
 }
 
 .contact-content {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  /* background-color: pink; */
   min-height: 400px;
 }
 
@@ -49,9 +49,23 @@ main {
   font-size: 2rem;
 }
 
+.pb-1 {
+  font-family: "IBM Plex Sans", sans-serif;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+.pb-2 a {
+  font-family: "IBM Plex Sans", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2rem;
+  color: black;
+}
+
 .contact-content li {
   list-style: none;
   text-align: left;
-  line-height: 2.5rem;
+  line-height: 3rem;
   font-size: 1.5rem;
 }
