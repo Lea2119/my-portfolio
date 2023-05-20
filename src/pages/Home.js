@@ -42,13 +42,13 @@ const Home = () => {
             className="text-content"
           >
             <m.h3 variants={item} custom={4}>
-              Driven by curiosity, fueled by code
+              Curious & Committed to Learn
             </m.h3>
             <m.h3 variants={item} custom={5}>
-              Driven to code, create, and innovate
+              Driven to Create and Embrace Challenges
             </m.h3>
             <m.h3 variants={item} custom={6}>
-              Inspired to code and drive innovation
+              Inspired to Grow & Collaborate
             </m.h3>
           </m.div>
         </div>

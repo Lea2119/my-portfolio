@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200;300;400;500;600;700;800;900&display=swap");
 
 html,
 body {
@@ -68,4 +67,14 @@ main {
   text-align: left;
   line-height: 3rem;
   font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    min-height: 400px;
+  }
 }

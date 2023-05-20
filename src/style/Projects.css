@@ -60,6 +60,7 @@ img {
   height: 100%;
 }
 
+
 span {
   background-color: black;
   font-size: 0.8rem;
@@ -92,11 +93,10 @@ span {
 }
 
 .card-content h6 {
-  font-weight: 800;
+  font-weight: 900;
+  font-size: 1.5rem;
   padding-top: 40px;
   margin-bottom: 40px;
-  padding-bottom: 4px;
-  border-bottom: 1px solid black;
 }
 
 .bottom-content {

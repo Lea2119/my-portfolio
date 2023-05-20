@@ -18,8 +18,8 @@
 
 .navbar li {
   font-family: "IBM Plex Sans", sans-serif;
-  padding-bottom: 8px;
-  border-bottom: 1px solid black;
+  /* padding-bottom: 8px;
+  border-bottom: 1px solid black; */
   text-decoration: none;
   color: black;
   font-size: 1.5rem;
@@ -28,4 +28,21 @@
 
 .navbar a {
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .navbar ul {
+    width: 100%;
+  }
+
+  .navbar li {
+    font-size: 0.8rem;
+  }
 }

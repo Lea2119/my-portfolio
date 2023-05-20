@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
 html,
 body {
   height: 100%;
@@ -7,9 +9,18 @@ body {
 .home {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Use min-height instead of height for responsive behavior */
-  /* background-color: rgb(253, 245, 235); */
-  /* background-color: #f7ede2; */
+  min-height: 100vh;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.little-description > * {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.text-content > * {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
 .contact-title h1 {
@@ -28,11 +39,29 @@ body {
   font-size: 8rem;
 }
 .bottom-content {
-  flex: 1; /* Use flex: 1 instead of flex: auto for responsive behavior */
+  flex: 1;
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: justify;
   font-size: 1rem;
   line-height: 2rem;
+}
+
+@media (max-width: 525px) {
+  .home h1 {
+    font-size: 4rem;
+  }
+
+  .little-description h3 {
+    display: none;
+  }
+
+  .text-content > * {
+    font-size: 1rem;
+  }
+  .bottom-content {
+    padding: 5px;
+    flex-wrap: wrap;
+  }
 }

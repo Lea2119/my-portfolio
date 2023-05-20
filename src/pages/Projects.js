@@ -8,7 +8,7 @@ const Projects = () => {
     {
       image: require("../assets/curtain-call.png"),
       title: "MOVIES THEATER WEBSITE",
-      tags: ["REACT", "FRAMER MOTION"],
+      tags: ["REACT"],
       href: "https://curtain-call.vercel.app/",
       git: "https://github.com/Lea2119/curtain-call",
       description:
@@ -17,7 +17,7 @@ const Projects = () => {
     {
       image: require("../assets/cornerstore-club-2.png"),
       title: "BOXING CLASSES WEBSITE",
-      tags: ["REACT", "CONTEXT API"],
+      tags: ["REACT"],
       href: "https://cornerstore-club.vercel.app/",
       git: "https://github.com/Lea2119/cornerstore-club",
       description:
