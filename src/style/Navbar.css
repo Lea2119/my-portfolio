@@ -16,20 +16,21 @@
   /* background-color: blue; */
 }
 
-.navbar li {
+.nav-link {
   font-family: "IBM Plex Sans", sans-serif;
   text-decoration: none;
   color: black;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
-.navbar a:hover {
+.nav-link:hover {
+  cursor: pointer;
+}
+
+.nav-link:hover {
   padding-bottom: 5px;
   border-bottom: 1px solid black;
-}
-.navbar a {
-  text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -37,6 +38,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
   }
 
   .navbar ul {
@@ -45,5 +47,14 @@
 
   .navbar li {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .navbar {
+    padding: 10px;
+  }
+  .navbar li {
+    font-size: 0.6rem;
   }
 }

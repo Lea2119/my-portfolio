@@ -6,18 +6,26 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <ul>
-        <Link to={"/"}>
-          <li>HOME</li>
-        </Link>
-        <Link to={"/projects"}>
-          <li>PROJECTS</li>
-        </Link>
-        <Link to={"/about"}>
-          <li>ABOUT</li>
-        </Link>
-        <Link to={"/contact"}>
-          <li>CONTACT</li>
-        </Link>
+        <li>
+          <Link to={"/"} className="nav-link">
+            HOME
+          </Link>
+        </li>
+        <li>
+          <Link to={"/projects"} className="nav-link">
+            PROJECTS
+          </Link>
+        </li>
+        <li>
+          <Link to={"/about"} className="nav-link">
+            ABOUT
+          </Link>
+        </li>
+        <li>
+          <Link to={"/contact"} className="nav-link">
+            CONTACT
+          </Link>
+        </li>
       </ul>
     </div>
   );
