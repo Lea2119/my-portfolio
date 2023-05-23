@@ -80,6 +80,16 @@ main {
     min-height: 400px;
   }
 
+  .pb-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-content a {
+    text-align: center;
+  }
+
   .pb-1 {
     font-family: "IBM Plex Sans", sans-serif;
     padding-bottom: 10px;
