@@ -18,6 +18,9 @@ body {
   font-size: 1.2rem;
 }
 
+.text-content h3 {
+  text-align: end;
+}
 .text-content > * {
   margin-bottom: 10px;
   font-size: 1.2rem;
@@ -53,15 +56,23 @@ body {
     font-size: 4rem;
   }
 
-  .little-description h3 {
+  .little-description {
     display: none;
+  }
+
+  .text-content h3 {
+    text-align: center;
   }
 
   .text-content > * {
     font-size: 1rem;
   }
+
   .bottom-content {
-    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     flex-wrap: wrap;
   }
 }
