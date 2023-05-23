@@ -48,6 +48,7 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 1rem;
   margin-bottom: 20px;
+  padding: 4px;
   line-height: 2.5;
   width: 100%;
   text-align: justify;
@@ -61,18 +62,9 @@ body {
 }
 
 @media (max-width: 525px) {
-  .interest-item span {
-    font-size: 3rem;
-    padding: 0;
-    font-family: "Anton", sans-serif;
-    background-color: transparent;
-    color: black;
-  }
-
-  .about-container {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 30px;
+  .about-text-container {
+    padding: 0px;
+    margin: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;

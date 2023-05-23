@@ -41,7 +41,7 @@ const Projects = () => {
         <m.main
           initial={{ y: "-100%" }}
           animate={{ y: "0%" }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
           exit={{ opacity: 1 }}
         >
           <div className="cards">
@@ -51,7 +51,7 @@ const Projects = () => {
                 className="card"
                 initial={{ opacity: 0, y: -100 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 1 }}
+                transition={{ duration: 1.5, delay: index * 0.5 }}
               >
                 <div className="img">
                   <img src={card.image} alt="" />

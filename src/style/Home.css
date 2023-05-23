@@ -27,7 +27,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 450px;
+  min-height: 380px;
   margin-top: 20px;
   font-size: 6rem;
   font-family: "Anton", sans-serif;

@@ -18,14 +18,16 @@
 
 .navbar li {
   font-family: "IBM Plex Sans", sans-serif;
-  /* padding-bottom: 8px;
-  border-bottom: 1px solid black; */
   text-decoration: none;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
+.navbar a:hover {
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}
 .navbar a {
   text-decoration: none;
 }
@@ -35,7 +37,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
   }
 
   .navbar ul {
