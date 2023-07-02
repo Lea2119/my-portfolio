@@ -9,10 +9,10 @@ const Projects = () => {
       image: require("../assets/64a17f5ff8f8e65589ff44dd--lea2119-booking-app.netlify.app_.png"),
       title: "BOOKING CLONE APP",
       tags: ["REACT", "MONGO", "EXPRESS", "NODE"],
-      href: "https://64a17f5ff8f8e65589ff44dd--lea2119-booking-app.netlify.app/",
+      href: "https://64a194d8f8f8e6613cff44cc--deluxe-strudel-c69959.netlify.app/",
       git: "https://github.com/Lea2119/booking",
       description:
-        "For this project, I recreated a booking website clone that can allow the user to login, register and update its profile. The user can also look for hotels and book a room.",
+        "This project is a booking website clone that allows users to create an account, log in, and update their profiles. Users can search for hotels based on location and dates, view hotel details, and book rooms.",
     },
     {
       image: require("../assets/curtain-call.png"),
