@@ -5,6 +5,15 @@ import "../style/Projects.css";
 
 const Projects = () => {
   const cards = [
+       {
+      image: require("../assets/64a17f5ff8f8e65589ff44dd--lea2119-booking-app.netlify.app_.png"),
+      title: "BOOKING CLONE APP",
+      tags: ["REACT", "MONGO", "EXPRESS", "NODE"],
+      href: "https://64a17f5ff8f8e65589ff44dd--lea2119-booking-app.netlify.app/",
+      git: "https://github.com/Lea2119/booking",
+      description:
+        "For this project, I recreated a booking website clone that can allow the user to login, register and update its profile. The user can also look for hotels and book a room.",
+    },
     {
       image: require("../assets/curtain-call.png"),
       title: "MOVIES THEATER WEBSITE",
